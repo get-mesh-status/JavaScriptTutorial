@@ -7,7 +7,7 @@ setTimeout(function(){
 },200);
 */
 
-/*
+
 let counter=0;
 function  timeout(){
     setTimeout(function(){
@@ -16,7 +16,7 @@ function  timeout(){
     },2000);
 }
 timeout();
-*/
+
 
 //nameless function,immediately invoked 
 (function(){

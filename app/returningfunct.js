@@ -16,6 +16,7 @@ function one() {
 //let value = one();
 //console.log(value);
 //console.log(typeof one);
+//console.log(one());
 /*
 let value= one; //variable pointing to function
 console.log(value()); //method invocation using variable 
@@ -24,28 +25,30 @@ console.log(typeof one); // function ,one is a function
 
 */
 
-/*
+
 function two() {
 
+    // function expression inside a function,nameless function
     return function () {
 
         console.log('two');
     }
 }
 
-let myFunction = two();
-myFunction();
+let myFunction = two();//myFunction is referencing the inner function                                   //expression inside two()
 
-myFunction= one;
-console.log(myFunction());
+myFunction(); // invoking the function by using mehtod invocation ();
 
-*/
+//myFunction= one;
+//console.log(myFunction());
+//console.log( myFunction);
 
-function three() {
 
-    return function () {
+/* function three() {
+
+    return function () { // returning a functino expression which in turn returns a string 
         return 'three';
     }
 }
 
-console.log(three()());
+console.log(three()()); */
