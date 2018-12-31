@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Tutorial</title>
+</head>
+<body>
+    <h2>The "this" keyword</h2>
+    <button onclick="clickHandler(this)"> Click me </button>
+    <p> Function can be invoked automatically without being called</p>
+    <p>This is known as <i><b>IIFE</b> or more commonly <em>(Initially invoked function expression)</em></i> </p>
+    <p id="iife" ></p>
+    <script>
+        (function (){
+            document.getElementById("iife").innerHTML="This is IIFE self-invokation";
+        })();
+        function clickHandler(arg){
+            console.log(arg);
+            console.log(arg.innerText);
+            console.log(this);
+        }
+        </script>
+</body>
+</html>
