@@ -4,7 +4,7 @@ body{
     padding: 2em;
     padding-top: 0;
     font-family: 'Open Sans', sans-serif;
-
+    height: 100vh;
 }
 h1{
 
@@ -14,7 +14,14 @@ h1{
     letter-spacing: 1px;
 }
 button {
-
+    background: #0d6b88;
+    text-align: center;
+    
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    
 
 }
 
@@ -33,5 +40,5 @@ button {
 #colorDiv{
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
 }
